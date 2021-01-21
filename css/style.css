@@ -1,0 +1,336 @@
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+  }
+  .scroll-top{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    position: fixed;
+    bottom: 10px;
+    right: 6px;
+    display: none;
+    z-index: 66;
+    
+  }
+
+  /* start header */
+  header{
+    background-color: #443344;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+  }
+  header nav ul li {
+    margin-left: 17px;
+  }
+  header nav ul li a{
+    color: #FFF;
+  }
+  header nav ul .active{
+    background-color: #665566;
+    border-bottom: 2px solid #EB233C;
+
+  }
+  header .navbar-brand{
+    color: #FFF;
+    font-family: 'Oleo Script Swash Caps', cursive;
+  }
+  header .navbar-brand:hover{
+    color: #EB233C;
+  }
+  header nav ul li a:hover{
+    background-color: #665566;
+    color: #fff;
+    border-bottom: 2px solid #EB233C;
+  }
+  header button {
+    outline: none !important;
+  }
+  header button span{
+    background-color: #FFF;
+    padding: 4px 12px;
+    border-radius: 5px;
+  }
+  header button span{
+    color: #6f6f6f;
+  }
+  @media (max-width: 991px) {
+    header nav ul{
+      margin-top: 20px;
+    }
+    header nav ul{
+     text-align: center;
+    }
+    header nav ul li{
+      margin: 0;
+    }
+    header nav ul .active{
+      border: none;
+      width: 30%;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  /* start section*/
+  section{
+    background-image: url(../img/background.jpg);
+    height: 730px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  .overlay{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: RGBA(15, 5, 20, 0.84);
+  }
+  section .title{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    color: #FFF;
+    z-index: 3;
+    text-align: center;
+  }
+  section .title h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  section .title h2 span{
+    color: #EB233C;
+  }
+  section .title p{
+    margin-bottom: 50px;
+  }
+  section .title a{
+    text-decoration: none;
+    border: rgba(204, 204, 204, 0.18) 1px solid;
+    padding: 12px 35px;
+    color: #ccc;
+    border-radius: 25px;
+    font-size: 15px;
+  }
+  section .title a:hover{
+    background-color: #ccc;
+    color: #000;
+  }
+
+  /* start box */
+  .box .icon i{
+    line-height: 70px;
+    font-size: 30px;
+    color: #EB233C;
+  }
+ .laoreet:hover{
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  transition: 0.6s;
+}
+
+/* start work */
+.work{
+  background-color: #FAF4FA;
+}
+.work .imge img{
+  width: 100%;
+  margin-bottom: 25px;
+  transition: 0.6s;
+}
+.work .imge img:hover{
+  opacity: 0.7;
+}
+.work .title h3{
+    border-bottom: 2px solid #EB233C;
+    display: inline-block;
+    line-height: 35px;
+}
+.work .bt {
+  padding: 12px 35px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px 25px 25px 25px;
+  font-size: 15px;
+  background-color: #EB233C;
+  margin-top: 20px;
+}
+
+/* start Testimonials */
+.test .title h3{
+  border-bottom: 2px solid #EB233C;
+  display: inline-block;
+  line-height: 35px;
+}
+.owl-carousel{
+  background-color: #FAF4FA;
+  padding: 40px;
+  border-radius: 20px;
+  width: 75%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.owl-carousel .owl-item img {
+  width: 10%;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+.test span{
+  font-weight: bold;
+}
+.test .item p{
+  font-size: 15px;
+  font-weight: 300;
+} 
+.test .item p i{
+  margin-right: 8px;
+}
+.test .item p i:last-child{
+  margin-left: 8px;
+}
+.owl-theme .owl-dots .owl-dot span{
+  background-color: #EB233C;
+  padding: 5px;
+}
+/************** */
+.subscribe{
+  background-image: url(../img/background.jpg);
+  width: 100%;
+  height: 250px;
+  margin-top: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.subscribe{
+  color: #FFF;
+  position: relative;
+}
+.overlay-2{
+  position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: RGBA(15, 5, 20, 0.84);
+}
+.subscribe h4{
+  border-bottom: 2px solid #EB233C;
+  display: inline-block;
+  line-height: 35px;
+}
+.subscribe a{
+  padding: 12px 35px;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px 25px 25px 25px;
+  font-size: 15px;
+  background-color: #EB233C;
+  margin-top: 30px;
+}
+@media(max-width:767px){
+  .subscribe a{
+    margin-top: 0;
+  }
+}
+
+/* start about */
+.about h3{
+  border-bottom: 2px solid #EB233C;
+  display: inline-block;
+  line-height: 35px;
+  text-align: center;
+}
+.about p{
+  font-size: 15px;
+  font-weight: 300;
+}
+.about .cont span{
+  color: #F4818F;
+  font-size: 50px;
+}
+
+/* start Contact  */
+.contact{
+  background-color: #F7F7F7;
+}
+.contact .title h3{
+  border-bottom: 2px solid #EB233C;
+  display: inline-block;
+  line-height: 35px;
+}
+.contact form input{
+  width: 49%;
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px red;
+  margin-bottom: 20px;
+  background: none;
+  outline: none !important;
+}
+.contact form input:last-child{
+  display: block;
+  padding: 10px 10px 65px;
+  width: 99%;
+}
+.contact button{
+  display: block;
+  margin: auto;
+  padding: 12px 35px;
+  color: #ffffff;
+  border-radius: 25px;
+  font-size: 15px;
+  background-color: #EB233C;
+  margin-top: 30px;
+  border: none;
+  outline: none !important;
+}
+.contact .address h4{
+  color: #EB233C;
+}
+.contact .address p{
+  font-weight: bold;
+}
+.contact .icon p i{
+  margin-right: 10px;
+  color: #EB233C;
+}
+@media(max-width:767px){
+  .contact .address h4{
+    padding-top: 20px;
+  }
+}
+
+/* start footer */
+footer .icon a i{
+  background-color: #222;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  transition: all 0.3s ease 0s;
+  width: 40px;
+}
+footer .icon a i:hover{
+  background-color:#EB233C;
+}
+footer p:last-child span{
+  color: #EB233C;
+}
